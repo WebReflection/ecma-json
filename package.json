@@ -1,6 +1,6 @@
 {
   "name": "ecma-json",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "JSON as is with ECMAScript fixes",
   "main": "cjs/index.js",
   "module": "esm/index.js",
