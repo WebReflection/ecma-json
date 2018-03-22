@@ -2,9 +2,9 @@
   "name": "ecma-json",
   "version": "0.0.1",
   "description": "JSON as is with ECMAScript fixes",
+  "browser": "min.js",
   "main": "cjs/index.js",
   "module": "esm/index.js",
-  "browser": "min.js",
   "scripts": {
     "test": "npm run test:cjs",
     "test:cjs": "node test/cjs.js",
