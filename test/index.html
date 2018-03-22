@@ -1,0 +1,10 @@
+<!doctype html>
+<script src="../min.js"></script>
+<script>
+if (ECMAJSON.parse(ECMAJSON.stringify('\u2028\u2029')) !== '\u2028\u2029')
+  alert('stringified text is NOT parsed correctly');
+
+if (ECMAJSON.stringify('\u2028\u2029') !== '"\\u2028\\u2029"')
+  alert('stringified text is NOT properly escaped');
+</script>
+<center>no alerts? all good!</center>
