@@ -1,1 +1,1 @@
-var ECMAJSON=function(a,b){return{parse:function(a,b){return JSON.parse.apply(null,arguments)},stringify:function(c,d,e){return JSON.stringify.apply(null,arguments).replace(a,b)}}}(/\u2028|\u2029/g,function(a){return"\u2028"===a?"\\u2028":"\\u2029"});
+var ECMAJSON=function(a,b){return'"\u2028"'===JSON.stringify("\u2028")?{parse:function(a,b){return JSON.parse.apply(null,arguments)},stringify:function(c,d,e){return JSON.stringify.apply(null,arguments).replace(a,b)}}:JSON}(/\u2028|\u2029/g,function(a){return"\u2028"===a?"\\u2028":"\\u2029"});
